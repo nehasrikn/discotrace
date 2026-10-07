@@ -1,0 +1,14 @@
+{
+    "answer_vanilla": {
+        "zero_shot": "{question}"
+    },
+    "answer_mimic": {
+        "zero_shot": "r/{subreddit} is a subreddit for {subreddit_explanation}. Answer the question as if you were a redditor in that subreddit: {question}"
+    },
+    "answer_mimic_community_guidelines": {
+        "zero_shot": {
+            "system": "r/{subreddit} is a subreddit for {subreddit_explanation}. The community guidelines for r/{subreddit} are as follows: {community_guidelines}.",
+            "user": "Answer the question as if you were a redditor in that subreddit: {question}"
+        }
+    }
+}
